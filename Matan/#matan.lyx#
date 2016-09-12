@@ -1,0 +1,679 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass amsart
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Лекции по математическому анализу.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+История математического анализа
+\end_layout
+
+\begin_layout Definition*
+Математический анализ-область науки, где изучается переменная величина своеобраз
+ными методами иследования (анализом посредствам б.м.
+ или посредствам предельных переходов.
+ 
+\end_layout
+
+\begin_layout Standard
+Предшествинеками были: метод исчерпования и метод неделимового.
+\end_layout
+
+\begin_layout Definition*
+Метод исчерпования - античныйметоддля исследования площадей или объёмов
+ тела.
+ Для нахождения некоторой фигуры вписывалась монотоная последовательность
+ других фигур и доказывалось, что их площадь неограничено приближается к
+ площади искомой фигуры.
+ Затем вычислялся предел и выдвагалась гипотиза , что этот предмет равен
+ R , доказывалось, что обратное приводит к противоречию.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Метод неделимового -совокупность предметов для вычесления площадей геометрически
+х тел.
+ Идея метода для плоских фигур: разделить их на фигуры нулевой ширины, потом
+ собирать без изменения длины , площадь которых известна.
+ 
+\end_layout
+
+\begin_layout Section
+Множества и действия над ними.
+ Точные грани числовых множеств.
+\end_layout
+
+\begin_layout Subsection
+Алгебра высказываний 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\wedge q$
+\end_inset
+
+–конъюкция (логическое произведение)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\vee q$
+\end_inset
+
+ -дизъюнкция (логическое или) 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\rightarrow q$
+\end_inset
+
+-импликация с посылкой p (если..., то...) 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\equiv q$
+\end_inset
+
+-эквиваленция (тогда и только тогда)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{q}$
+\end_inset
+
+-отрицание 
+\end_layout
+
+\begin_layout Enumerate
+V - произвольное истиное
+\end_layout
+
+\begin_layout Enumerate
+F - произвольное ложное 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ - квантер существования 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall$
+\end_inset
+
+-квантор всеобщности
+\end_layout
+
+\begin_layout Standard
+p,q,r - произвольные высказывания
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Множество -совокупность неупорядоченных неповторяющихся объектов 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Аксиомы множеств
+\end_layout
+
+\begin_layout Enumerate
+Аксиома объемности -если множества A и B состоят из одних и тех же элементов,
+ то они совпадают.
+ A=B
+\end_layout
+
+\begin_layout Enumerate
+Аксиома суммы - для произвольных множеств A и B существует множество, элементы
+ которого являются элементами множества A и все элементы множества B.
+ 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Аксиома разности -для произвольного множества A и B существует множество,
+ элементами кторого являются те и только те элементы множества A, которые
+ не являются элементами множеста B.
+ 
+\begin_inset Formula $A\setminus B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Существет по крайней мере одно множество 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Произведение -
+\begin_inset Formula $A\cap B$
+\end_inset
+
+ множеств A и B -это общая часть сомножетелей: 
+\begin_inset Formula $\forall x\in$
+\end_inset
+
+ 
+\begin_inset Formula $A\cap B\equiv(x\in A)(x\in B)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Симметричная разность -разность двух множеств A и B определяется как : 
+\begin_inset Formula $A\bigtriangleup B\equiv(A\setminus B)\cup(A\setminus B)$
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Definition*
+Включение -множесвто A называется подмножеством B, если каждый элемент множества
+ В принадлежит множеству A.
+ 
+\begin_inset Formula $A\subset B:A=B,B=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+C
+\begin_inset Formula $_{M}A$
+\end_inset
+
+-дополненое множества A в M.
+ C
+\begin_inset Formula $_{m}$
+\end_inset
+
+=
+\begin_inset Formula $A\setminus B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Прямое(декартовое) произведение множеств X и Y называется множество всех
+ упорядочных пар(x,y): 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, 
+\begin_inset Formula $x\in Y,$
+\end_inset
+
+ 
+\begin_inset Formula $X\times Y\neq Y\times X$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Отображение -правило 
+\begin_inset Formula $f$
+\end_inset
+
+, по которому каждому элементу 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ ставится в соответсвие опредленый, и при этом единственный, элемент 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+.(отображение множества X в множества Y).
+ X- область значения.
+ Y-область определения.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Отображение 
+\begin_inset Formula $f:N\rightarrow Y$
+\end_inset
+
+ множества 
+\begin_inset Formula $N$
+\end_inset
+
+ в произвеольное множество 
+\begin_inset Formula $Y$
+\end_inset
+
+ будем называть последовательностью (в Y) .Числовой последовательностью же
+ мы будем называть : 
+\begin_inset Formula $\left\{ x_{n}\right\} _{i=1}^{\infty}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+График функции - 
+\begin_inset Formula $\varGamma_{f}=\left\{ \left(x,y\right)\in X\times Y\mid y=f(x)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Образ множества A при отображение 
+\begin_inset Formula $f$
+\end_inset
+
+ называется множество 
+\begin_inset Formula $f(A)=\left\{ y\in Y\mid\exists x\in A:y=f(x)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Прообраз множества B при отображение 
+\begin_inset Formula $f:X\rightarrow Y$
+\end_inset
+
+ 
+\begin_inset Formula $\left(B\subset Y\right)$
+\end_inset
+
+ называется множество 
+\begin_inset Formula $f^{-1}(B)=\left\{ x\in X\mid f(x)\in B\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Транзитивность - 
+\begin_inset Formula $f:X\rightarrow Y$
+\end_inset
+
+ 
+\begin_inset Formula $g:Y\rightarrow Z$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $h:X\rightarrow Z$
+\end_inset
+
+ 
+\begin_inset Formula $h(x)=g(f(x))\forall x\in X$
+\end_inset
+
+ , где 
+\begin_inset Formula $g(f(x))$
+\end_inset
+
+-суперпозиция отображения.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $f\circ g$
+\end_inset
+
+ - суперпозиция 
+\begin_inset Formula $f:X\rightarrow Y$
+\end_inset
+
+ 
+\begin_inset Formula $g:Y\rightarrow Z$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $h:X\rightarrow Z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim*
+\begin_inset Formula $g\circ\left(f\circ g\right)=\left(h\circ g\right)\circ f$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $[h\circ\left(g\circ f\right)]=h\left(\left(g\circ f\right)(x)\right)=h\left(g\left(f\left(x\right)\right)\right)=\left(h\circ g\right)\left(f\left(x\right)\right)=\left[\left(h\circ g\right)\circ f\right]\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $f:X\rightarrow Y$
+\end_inset
+
+ отображение 
+\begin_inset Formula $f$
+\end_inset
+
+ от X в Y называется 
+\end_layout
+
+\begin_layout Itemize
+сюръективным или отображением 
+\begin_inset Quotes eld
+\end_inset
+
+на
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $f(X)=Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+инъективным или взаимно однозначным отображение 
+\begin_inset Quotes eld
+\end_inset
+
+в
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\forall x_{1},x_{2}\in X$
+\end_inset
+
+ 
+\begin_inset Formula $x_{1}\neq x_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $f(x_{1})\neq f(x_{2})$
+\end_inset
+
+ , 
+\begin_inset Formula $x_{1}=x_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $f(x_{1})=f(x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+биективным или взаимно однозначным отображением 
+\begin_inset Quotes eld
+\end_inset
+
+на
+\begin_inset Quotes erd
+\end_inset
+
+ (одновременно и сюръективно и инъективно
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Путь наше отображение биективно 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+можно установить новое отображение:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g:Y\rightarrow X\,\left(y\in Y,g(x)=x\in X\right)$
+\end_inset
+
+ (
+\begin_inset Formula $g(y)=x)\Leftrightarrow(f(x)=y)$
+\end_inset
+
+ 
+\begin_inset Formula $g=f^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+обратное отображение биективно 
+\end_layout
+
+\begin_layout Enumerate
+Имеет место равенства: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f^{-1}\left(f\left(x\right)\right)=x$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
