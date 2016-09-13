@@ -321,6 +321,13 @@ C
 
 \end_layout
 
+\begin_layout Section
+Понятие отображения, образ и прообраз множества при отображении, суперпозиция
+ отображений, сужение отображения, график отображения.
+ Сюрьективные, инъективные и биективные отображения.
+ Обратное отображение.
+\end_layout
+
 \begin_layout Definition*
 Прямое(декартовое) произведение множеств X и Y называется множество всех
  упорядочных пар(x,y): 
@@ -668,12 +675,800 @@ C
 \end_inset
 
  
-\begin_inset Formula $\forall x$
+\begin_inset Formula $\forall x\in X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(f^{-1}\left(y\right)\right)=y\,\forall x\in Y$
 \end_inset
 
  
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f^{-1}:Y\rightarrow X$
+\end_inset
+
+, 
+\begin_inset Formula $f:X\rightarrow Y$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(f^{-1}\right)^{-1}=f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+//дописать
+\end_layout
+
+\begin_layout Example*
+Отображение.
+ Иьъективное не сюръективное.//вставить картинку.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+Отображение.
+ Не инъективное, сюръективное.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+Отображение.
+ Инъективное, сюръективное 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+биективное 
+\end_layout
+
+\begin_layout Section
+Счётные множества.
+ Несчётность множества вещественных чисел.
+ Понятие мощности множества.
+\end_layout
+
+\begin_layout Standard
+// дописать 
+\end_layout
+
+\begin_layout Section
+Точные грани числовых множеств.
+\end_layout
+
+\begin_layout Conjecture*
+Множесство 
+\begin_inset Formula $E\subset R$
+\end_inset
+
+ называется 
+\end_layout
+
+\begin_layout Itemize
+ограниеченым сверху, если существует такое число 
+\begin_inset Formula $M\in R$
+\end_inset
+
+, что 
+\begin_inset Formula $x\leq M$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ограниеченым сверху, если существует такое число 
+\end_layout
+
+\begin_layout Lemma*
+Для того чтобы множесво 
+\begin_inset Formula $E\subset R\,$
+\end_inset
+
+ было ограниченро необходимо и достаточно, чтобы нашлось такое число , что
+ 
+\end_layout
+
+\begin_layout Proof
+Необхадимость 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ Пусть множество 
+\begin_inset Formula $E\subset R$
+\end_inset
+
+ 
+\begin_inset Formula $m\in R$
+\end_inset
+
+ 
+\begin_inset Formula $M\in R$
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $m\leq x\leq M,\,\forall x\in E$
+\end_inset
+
+ 
+\begin_inset Formula $N\leq x\leq C$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in E$
+\end_inset
+
+ 
+\begin_inset Formula $C=max\left\{ abs(m),abs(M)\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $C\geq abs(m)\geq-m$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M\leq abs(M)\leq C$
+\end_inset
+
+ 
+\begin_inset Formula $abs(x)\leq\text{С}$
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\forall x\in E$
+\end_inset
+
+(4)
+\end_layout
+
+\begin_layout Proof
+Достаточноть.
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $C\in R$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+выполняется неравенство (4).
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ множество ограничено.
+\end_layout
+
+\begin_layout Definition*
+Если множесво 
+\begin_inset Formula $E\subset R$
+\end_inset
+
+ограничено свурху, то всякое такое число , что , будем называть верхней
+ гранью этого множества.
+ Аналогично , если множесво ограничено снизу, то всякое такое число , что
+ будем называть нижней гранью этого множества.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Наименьшая из верхних граней множесва называется точной гранью этого множества,
+ а наибольшая из его нижних гранией назыается точной нижней.
+\end_layout
+
+\begin_layout Remark*
+С учетом определиния 2 и 3 определение точной верхней грани в развернутой
+ форме можно сформулировать так: Число 
+\begin_inset Formula $C\in R$
+\end_inset
+
+ называется точной нижней граню множества , если 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\leq E$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\exists x_{\varepsilon}\in E$
+\end_inset
+
+ : 
+\begin_inset Formula $C-\varepsilon<x$
+\end_inset
+
+(никакое число меньше 
+\begin_inset Formula $\text{С}$
+\end_inset
+
+ верхних граний множесва 
+\begin_inset Formula $E$
+\end_inset
+
+ никакоей верхней гранью не является)
+\end_layout
+
+\begin_layout Remark*
+С учетом определиния 2 и 3 определение точной нижней грани в развернутой
+ форме можно сформулировать так: Число 
+\begin_inset Formula $C\in R$
+\end_inset
+
+ называется точной нижней граню множества , если 
+\end_layout
+
+\begin_layout Definition*
+Не всякое числовое множество имеет наибольшей или наименьший элемент.Наибольший
+ элемент множества 
+\begin_inset Formula $E\subset R$
+\end_inset
+
+ 
+\begin_inset Formula $M(M\in E)$
+\end_inset
+
+ 
+\begin_inset Formula $x\leq M\,\text{}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Всякое непустое, ограниченное сверху числовое множесвто имеет точную верхнюю
+ грань, а всякое непустое, ограниченное снизу числое множество имеет точную
+ нижную грань.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+(1) Пусть множество 
+\begin_inset Formula $E\subset R$
+\end_inset
+
+ тогда оно обязанно иметь хотя бы одну грань(пересмотреть).
+ 
+\begin_inset Formula $\forall x\in E$
+\end_inset
+
+ 
+\begin_inset Formula $\forall y\in F$
+\end_inset
+
+.
+ По аксиоме непрерывности 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\exists c\in R$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Formula $x\leq c\leq y$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in E$
+\end_inset
+
+ 
+\begin_inset Formula $\forall y\in F$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\text{С}$
+\end_inset
+
+-верхняя грань 
+\begin_inset Formula $E$
+\end_inset
+
+(
+\begin_inset Formula $c=supE)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Если неограниено сверху 
+\begin_inset Formula $supE=+\infty$
+\end_inset
+
+, неогрнаичену снизу 
+\begin_inset Formula $\text{inf E}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Принцип Архимеда.
+ 
+\end_layout
+
+\begin_layout Theorem*
+Каково бы ни было действительное число a, 
+\begin_inset Formula $\exists$
+\end_inset
+
+ такое натуральное число 
+\begin_inset Formula $n$
+\end_inset
+
+, что 
+\begin_inset Formula $n>a$
+\end_inset
+
+: 
+\begin_inset Formula $\forall x\in R$
+\end_inset
+
+ 
+\begin_inset Formula $\exists n\in N$
+\end_inset
+
+ 
+\begin_inset Formula $n>a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+(от противного )Допустим, что принцип Архимеда не выполняется.
+ 
+\begin_inset Formula $\exists a\in R,\forall n\in N$
+\end_inset
+
+ 
+\begin_inset Formula $n\leq a$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ множество ограничено снизу множеством натуральных чисел.
+ Множество натуральных чисел как всякое непустое ограниченное непустое множество
+ имеет конечную верхную грань.
+ 
+\begin_inset Formula $\beta=supN$
+\end_inset
+
+ 
+\begin_inset Formula $\beta-1<\beta$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $n>\beta-1$
+\end_inset
+
+ 
+\begin_inset Formula $n+1>\beta$
+\end_inset
+
+ 
+\begin_inset Formula $n+1\in N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Следствие.
+ Каковы бы ни были числа a и b существет такое натуральное число n , что
+ n 
+\begin_inset Formula $a>b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $\frac{1}{n},n=1,2,...$
+\end_inset
+
+ найдём 
+\begin_inset Formula $supX$
+\end_inset
+
+ найдём 
+\begin_inset Formula $infX$
+\end_inset
+
+.
+ Возьмем 
+\begin_inset Formula $c>0$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\exists n$
+\end_inset
+
+ : 
+\begin_inset Formula $\frac{1}{n}<c$
+\end_inset
+
+ 
+\begin_inset Formula $\forall c$
+\end_inset
+
+ уже не ограничевает 
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $inf\left\{ \frac{1}{n}\right\} =0$
+\end_inset
+
+ 
+\begin_inset Formula $\frac{1}{n}\in$
+\end_inset
+
+
+\begin_inset Formula $(0,1]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Иррациональные числа.
+ (Дедекинд).
+ Расмотрим разбиения множества всех рациональных чисел на два не пустых
+ подмножества 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula $\acute{A}$
+\end_inset
+
+ назовём такое разбиение сечением если выполняются 2 условия 
+\end_layout
+
+\begin_layout Enumerate
+каждое рациональное число попадает в одно из множества 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula $\acute{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+каждое число 
+\begin_inset Formula $a$
+\end_inset
+
+ множества 
+\begin_inset Formula $\text{A}$
+\end_inset
+
+ меньше каждого числа 
+\begin_inset Formula $\acute{\text{a}}$
+\end_inset
+
+ множества 
+\begin_inset Formula $\acute{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Три вида сечения 
+\end_layout
+
+\begin_layout Enumerate
+в нижнем классе нет наибобьшего числа , а в верхнем классе есть наименьшее
+ чило 
+\end_layout
+
+\begin_layout Enumerate
+в нижнем классе имеется наибольшеее число, а в верхнем класее нет наибольшего
+ 
+\end_layout
+
+\begin_layout Enumerate
+и в нижнем классе нет наибольшего числа, ни в верхнем классе -наименьшего
+ 
+\end_layout
+
+\begin_layout Standard
+в первых двух случаях говорят что сечение призводиться рациональным числом
+ 
+\begin_inset Formula $\text{r}$
+\end_inset
+
+ которое явлеятся пограничным между множеством 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $\acute{A}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $r$
+\end_inset
+
+- определяет сечение.
+ 
+\end_layout
+
+\begin_layout Definition*
+Всякое сечение вида 3 определяет некоторе иррациональное число a.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Иррациональное число -вещественное число, которе не является рациональным
+\begin_inset Formula $Q$
+\end_inset
+
+.
+ Иррациональные числа можно представить в виде бесконечной не периодической
+ дроби.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Показателная функция 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a^{r}$
+\end_inset
+
+ 
+\begin_inset Formula $a>0$
+\end_inset
+
+ 
+\begin_inset Formula $r\in Q$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $r_{1}<r_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $a>1$
+\end_inset
+
+ 
+\begin_inset Formula $a^{r_{1}}<a^{r_{2}}$
+\end_inset
+
+ 
+\begin_inset Formula $a<1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a^{r_{1}}a^{r_{2}}=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Определим теперь степень 
+\begin_inset Formula $\alpha^{\beta}$
+\end_inset
+
+ для любого действительного 
+\begin_inset Formula $\beta$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha^{b}$
+\end_inset
+
+ 
+\begin_inset Formula $b,\acute{b}\in Q$
+\end_inset
+
+ 
+\begin_inset Formula $b<\beta<b$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha^{\beta}$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha^{b}<\gamma<\alpha^{b}$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ a^{b}\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $\gamma=sup_{b<\beta}\left\{ a\right\} ^{b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Логарифмы.
+ 
+\end_layout
+
+\begin_layout Standard
+Задача: установить существование логарифма любого вещественного числа 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ 
+\begin_inset Formula $a>1$
+\end_inset
+
+ 
+\end_layout
+
 \end_body
 \end_document
