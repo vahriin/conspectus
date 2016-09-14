@@ -751,6 +751,10 @@ C
  Понятие мощности множества.
 \end_layout
 
+\begin_layout Subsection
+Аксиомы Пеано
+\end_layout
+
 \begin_layout Enumerate
 \begin_inset Formula $l$
 \end_inset
@@ -791,10 +795,161 @@ C
 \begin_inset Formula $n_{2}$
 \end_inset
 
- -различные натуральные числа, то 
+ -различные натуральные числа, то то 
+\begin_inset Formula $\rho(n_{1})\neq\rho(n_{2})$
+\end_inset
+
+
 \end_layout
 
-\begin_layout Section
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $P$
+\end_inset
+
+ -некоторое свойство, которым может обладать натуральное число; таким образом
+ 
+\begin_inset Formula $\text{P\left(n\right)}$
+\end_inset
+
+-верно, если натуральное число n обладает свойством 
+\begin_inset Formula $P$
+\end_inset
+
+ и ложно в противном случае.Тогда если 
+\begin_inset Formula $P\left(1\right)$
+\end_inset
+
+ истино и для любого наторального числа из 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $P\left(\rho\left(n\right)\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $P(n)$
+\end_inset
+
+ выполняется для любого натурального n.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $P(1)$
+\end_inset
+
+ -база индукции
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $P\left(n\right)\rightarrow P\left(S\left(n\right)\right)$
+\end_inset
+
+ -шаг индукции
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $N$
+\end_inset
+
+-множество натуральных чисел
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $Z$
+\end_inset
+
+-множество целых чисел
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $Q$
+\end_inset
+
+-множество рациональных чисел
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $R$
+\end_inset
+
+-множество вещественных чисел
+\end_layout
+
+\begin_layout Enumerate
+Действительные(вещественные) число 
+\begin_inset Formula $a$
+\end_inset
+
+ записывается в виде бесконечной десятичной дроби 
+\begin_inset Formula $a=\pm a_{0},...a_{n}$
+\end_inset
+
+ , где 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+-неотрицательное целое число , а каждое 
+\begin_inset Formula $a_{n}\in N_{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Бесконечная десятичноая дробь называется переодической и записывается в
+ ввиде 
+\begin_inset Formula $a=\pm a_{0},...a_{n}\left(\beta_{1},..\beta_{n}\right)$
+\end_inset
+
+ , если после некоторое десятичного разряда группе цифр 
+\begin_inset Formula $\left(\beta_{1},..\beta_{n}\right)$
+\end_inset
+
+ Бесконечные переодические числа являются рациональными чиcлами 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+ , где 
+\begin_inset Formula $p\in Z,\,q\in N$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Переход от записи рационального числа 
+\begin_inset Formula $a$
+\end_inset
+
+
+\begin_inset Formula $a=\pm a_{0},...a_{n}$
+\end_inset
+
+ к виду 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+ производится по формуле //gh
+\end_layout
+
+\begin_layout Subsection
 Точные грани числовых множеств.
 \end_layout
 
@@ -1310,19 +1465,14 @@ c наименьшее из всех граней
 \end_inset
 
 , неогрнаичену снизу 
-\begin_inset Formula $\text{inf E=}$
+\begin_inset Formula $infE=-\infty$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Принцип Архимеда.
- 
-\end_layout
-
 \begin_layout Theorem*
-Каково бы ни было действительное число a, 
+Принцип Архимеда -каково бы ни было действительное число a, 
 \begin_inset Formula $\exists$
 \end_inset
 
@@ -1335,7 +1485,7 @@ c наименьшее из всех граней
 \end_inset
 
 : 
-\begin_inset Formula $\forall x\in R$
+\begin_inset Formula $\forall a\in R$
 \end_inset
 
  
@@ -1349,7 +1499,7 @@ c наименьшее из всех граней
 
 \end_layout
 
-\begin_layout Definition*
+\begin_layout Proof
 (от противного )Допустим, что принцип Архимеда не выполняется.
  
 \begin_inset Formula $\exists a\in R,\forall n\in N$
@@ -1363,7 +1513,7 @@ c наименьшее из всех граней
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
- множество ограничено снизу множеством натуральных чисел.
+ число a ограничевает сверху множество натуральных чисел.
  Множество натуральных чисел как всякое непустое ограниченное непустое множество
  имеет конечную верхную грань.
  
@@ -1378,8 +1528,12 @@ c наименьшее из всех граней
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
+ Согласно свойству верхних граней 
+\begin_inset Formula $\exists n>\beta-1$
+\end_inset
+
  
-\begin_inset Formula $n>\beta-1$
+\begin_inset Formula $\Rightarrow$
 \end_inset
 
  
@@ -1402,9 +1556,12 @@ c наименьшее из всех граней
 
 \begin_layout Standard
 Следствие.
- Каковы бы ни были числа a и b существет такое натуральное число n , что
- n 
-\begin_inset Formula $a>b$
+ Каковы бы ни были числа a и b: 
+\begin_inset Formula $0<a<b$
+\end_inset
+
+ существет такое натуральное число n , что 
+\begin_inset Formula $na>b$
 \end_inset
 
 
@@ -1473,6 +1630,10 @@ c наименьшее из всех граней
 
 \end_layout
 
+\begin_layout Subsection
+Иррациональные числа
+\end_layout
+
 \begin_layout Definition*
 Иррациональные числа.
  (Дедекинд).
@@ -1481,11 +1642,11 @@ c наименьшее из всех граней
 \begin_inset Formula $A$
 \end_inset
 
- 
+ и 
 \begin_inset Formula $\acute{A}$
 \end_inset
 
- назовём такое разбиение сечением если выполняются 2 условия 
+ назовём такое разбиение сечением если выполняются 2 условия:
 \end_layout
 
 \begin_layout Enumerate
@@ -1493,7 +1654,7 @@ c наименьшее из всех граней
 \begin_inset Formula $A$
 \end_inset
 
- 
+ или 
 \begin_inset Formula $\acute{A}$
 \end_inset
 
@@ -1520,12 +1681,30 @@ c наименьшее из всех граней
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $A:$
+\end_inset
+
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ -нижний класс сечения
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\acute{A}$
+\end_inset
+
+-верхний класс сечения
+\end_layout
+
 \begin_layout Definition*
 Три вида сечения 
 \end_layout
 
 \begin_layout Enumerate
-в нижнем классе нет наибобьшего числа , а в верхнем классе есть наименьшее
+в нижнем классе нет наибольшего числа , а в верхнем классе есть наименьшее
  чило 
 \end_layout
 
@@ -1535,7 +1714,7 @@ c наименьшее из всех граней
 \end_layout
 
 \begin_layout Enumerate
-и в нижнем классе нет наибольшего числа, ни в верхнем классе -наименьшего
+ни в нижнем классе нет наибольшего числа, ни в верхнем классе -наименьшего
  
 \end_layout
 
@@ -1576,6 +1755,7 @@ c наименьшее из всех граней
 
 \begin_layout Definition*
 Иррациональное число -вещественное число, которе не является рациональным
+ 
 \begin_inset Formula $Q$
 \end_inset
 
@@ -1591,7 +1771,7 @@ c наименьшее из всех граней
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
 Показателная функция 
 \end_layout
 
@@ -1599,7 +1779,7 @@ c наименьшее из всех граней
 \begin_inset Formula $a^{r}$
 \end_inset
 
- 
+ ,
 \begin_inset Formula $a>0$
 \end_inset
 
@@ -1622,15 +1802,33 @@ c наименьшее из всех граней
 \begin_inset Formula $a^{r_{1}}<a^{r_{2}}$
 \end_inset
 
- 
+ , если 
 \begin_inset Formula $a<1$
+\end_inset
+
+ 
+\begin_inset Formula $a^{r_{1}}\text{>}a^{r_{2}}$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $a^{r_{1}}a^{r_{2}}=$
+\begin_inset Formula $a^{r_{1}}a^{r_{2}}=a^{r_{1}+r_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(a^{r_{1}}\right)^{r_{2}}=a^{r_{1}r_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a^{-r}=\frac{1}{a^{r}}$
 \end_inset
 
 
@@ -1676,7 +1874,11 @@ c наименьшее из всех граней
 \begin_inset Formula $\alpha^{\beta}$
 \end_inset
 
- 
+ назывестя некторое число 
+\begin_inset Formula $\gamma$
+\end_inset
+
+: 
 \begin_inset Formula $\alpha^{b}<\gamma<\alpha^{b}$
 \end_inset
 
@@ -1684,14 +1886,22 @@ c наименьшее из всех граней
 \begin_inset Formula $\left\{ a^{b}\right\} $
 \end_inset
 
+ ограниченное сверху:
+\begin_inset Formula $\alpha^{\acute{\beta}}$
+\end_inset
+
  
-\begin_inset Formula $\gamma=sup_{b<\beta}\left\{ a\right\} ^{b}$
+\begin_inset Formula $\gamma=sup_{b<\beta}\left\{ \alpha\right\} ^{\beta}$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha^{\beta}<\gamma<\alpha^{\acute{\beta}}$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
 Логарифмы.
  
 \end_layout

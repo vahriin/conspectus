@@ -823,7 +823,23 @@ C
 \end_layout
 
 \begin_layout Itemize
-ограниеченым сверху, если существует такое число 
+ограниченым сверху, если существует такое число 
+\begin_inset Formula $m\in R$
+\end_inset
+
+, что 
+\begin_inset Formula $m\leq x$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ограниченным, если оно ограниченно сверху и снизу.
 \end_layout
 
 \begin_layout Lemma*
@@ -831,17 +847,33 @@ C
 \begin_inset Formula $E\subset R\,$
 \end_inset
 
- было ограниченро необходимо и достаточно, чтобы нашлось такое число , что
+ было ограничено необходимо и достаточно, чтобы 
+\begin_inset Formula $\exists C\in R$
+\end_inset
+
+ ,что 
+\begin_inset Formula $\left|x\right|\leq C$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in E$
+\end_inset
+
  
 \end_layout
 
+\begin_deeper
 \begin_layout Proof
-Необхадимость 
+Необходимость 
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
  Пусть множество 
 \begin_inset Formula $E\subset R$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
 \end_inset
 
  
@@ -853,15 +885,19 @@ C
 \end_inset
 
  
-\begin_inset space ~
+\begin_inset Formula $\Rightarrow$
 \end_inset
 
-
+ 
 \begin_inset Formula $m\leq x\leq M,\,\forall x\in E$
 \end_inset
 
  
-\begin_inset Formula $N\leq x\leq C$
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $-C\leq x\leq C$
 \end_inset
 
  
@@ -869,11 +905,11 @@ C
 \end_inset
 
  
-\begin_inset Formula $C=max\left\{ abs(m),abs(M)\right\} $
+\begin_inset Formula $C=max\left\{ \left|m\right|,\left|M\right|\right\} $
 \end_inset
 
  
-\begin_inset Formula $C\geq abs(m)\geq-m$
+\begin_inset Formula $C\geq\left|m\right|\geq-m$
 \end_inset
 
 
@@ -889,11 +925,15 @@ C
 \end_inset
 
  
-\begin_inset Formula $M\leq abs(M)\leq C$
+\begin_inset Formula $-C\leq m$
 \end_inset
 
  
-\begin_inset Formula $abs(x)\leq\text{С}$
+\begin_inset Formula $M\leq\left|M\right|\leq C$
+\end_inset
+
+ По свойству абсолютной величины 
+\begin_inset Formula $x\leq C$
 \end_inset
 
  
@@ -907,26 +947,30 @@ C
 (4)
 \end_layout
 
+\end_deeper
 \begin_layout Proof
 Достаточноть.
  
 \begin_inset Formula $\Leftarrow$
 \end_inset
 
+ 
+\begin_inset Formula $\exists C\in R$
+\end_inset
 
-\begin_inset Formula $C\in R$
+ Если выполняется условие 
+\begin_inset Formula $-c\leq x\leq c$
+\end_inset
+
+ , то 
+\begin_inset Formula $M\leq\left|M\right|\leq C$
 \end_inset
 
  
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
-выполняется неравенство (4).
- 
-\begin_inset Formula $\Rightarrow$
-\end_inset
-
- множество ограничено.
+ множество ограниченно.
 \end_layout
 
 \begin_layout Definition*
@@ -934,9 +978,35 @@ C
 \begin_inset Formula $E\subset R$
 \end_inset
 
-ограничено свурху, то всякое такое число , что , будем называть верхней
- гранью этого множества.
- Аналогично , если множесво ограничено снизу, то всякое такое число , что
+ ограничено свурху, то всякое такое число 
+\begin_inset Formula $M\in R$
+\end_inset
+
+, что 
+\begin_inset Formula $x\leq M$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in E$
+\end_inset
+
+, будем называть верхней гранью этого множества.
+ Аналогично , если множесво 
+\begin_inset Formula $E\subset R$
+\end_inset
+
+ ограничено снизу, то всякое такое число 
+\begin_inset Formula $m\in R$
+\end_inset
+
+, что 
+\begin_inset Formula $M\leq x$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in E$
+\end_inset
+
  будем называть нижней гранью этого множества.
 \end_layout
 
@@ -948,8 +1018,20 @@ C
 \end_layout
 
 \begin_layout Definition*
-Наименьшая из верхних граней множесва называется точной гранью этого множества,
- а наибольшая из его нижних гранией назыается точной нижней.
+Наименьшая из верхних граней множесва 
+\begin_inset Formula $E\subset R$
+\end_inset
+
+ называется точной верхней гранью 
+\begin_inset Formula $supE$
+\end_inset
+
+ -supremum этого множества, а наибольшая из его нижних граней называется
+ называется точной нижней 
+\begin_inset Formula $infE$
+\end_inset
+
+ -infimum .
 \end_layout
 
 \begin_layout Remark*
@@ -967,10 +1049,6 @@ C
 
  
 \begin_inset Formula $\forall x\in E$
-\end_inset
-
-
-\begin_inset Formula $ $
 \end_inset
 
 
@@ -1004,17 +1082,90 @@ C
 \end_layout
 
 \begin_layout Remark*
-С учетом определиния 2 и 3 определение точной нижней грани в развернутой
- форме можно сформулировать так: Число 
+С учетом определиний точной нижней грани в развернутой форме можно сформулироват
+ь так: Число 
 \begin_inset Formula $C\in R$
 \end_inset
 
- называется точной нижней граню множества , если 
+ называется точной верхней граню множества , если
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\leq C$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+ Никакое число меньше C верхней гранью множества 
+\begin_inset Formula $E$
+\end_inset
+
+ не является 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists x_{\varepsilon}\in E:\,C-\varepsilon<x_{\varepsilon}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Remark*
+Число 
+\begin_inset Formula $C\in R$
+\end_inset
+
+ называется точной верхней граню множества , если
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\leq x$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+ Никакое число большей C нижней гранью множества 
+\begin_inset Formula $E$
+\end_inset
+
+ не является 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists x_{\varepsilon}\in E:\,x_{\varepsilon}<C+\varepsilon$
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Definition*
-Не всякое числовое множество имеет наибольшей или наименьший элемент.Наибольший
- элемент множества 
+Не всякое числовое множество имеет наибольшей или наименьший элемент.
+\end_layout
+
+\begin_layout Definition*
+Наибольший элемент
+\begin_inset Formula $(maxE)$
+\end_inset
+
+ множества 
 \begin_inset Formula $E\subset R$
 \end_inset
 
@@ -1023,10 +1174,38 @@ C
 \end_inset
 
  
-\begin_inset Formula $x\leq M\,\text{}$
+\begin_inset Formula $x\leq M$
 \end_inset
 
  
+\begin_inset Formula $\forall x\in E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Наименьший элемент
+\begin_inset Formula $(minE)$
+\end_inset
+
+ множества 
+\begin_inset Formula $E\subset R$
+\end_inset
+
+ 
+\begin_inset Formula $m(m\in E)$
+\end_inset
+
+ 
+\begin_inset Formula $x\geq M$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x\in E$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1055,7 +1234,20 @@ C
 \begin_inset Formula $E\subset R$
 \end_inset
 
- тогда оно обязанно иметь хотя бы одну грань(пересмотреть).
+ не пусто, тогда оно обязанно иметь хотя бы одну грань.
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ множество всех верхних граней не пусто
+\begin_inset Formula $\left(F\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x\leq y$
+\end_inset
+
  
 \begin_inset Formula $\forall x\in E$
 \end_inset
@@ -1093,20 +1285,23 @@ C
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
- 
-\begin_inset Formula $\text{С}$
-\end_inset
-
--верхняя грань 
+ c-верхняя грань 
 \begin_inset Formula $E$
 \end_inset
 
-(
-\begin_inset Formula $c=supE)$
+ 
+\begin_inset Formula $\Rightarrow$
 \end_inset
 
-.
+c наименьшее из всех граней 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
  
+\begin_inset Formula $c=supE$
+\end_inset
+
+ (точная верхняя грань)
 \end_layout
 
 \begin_layout Standard
@@ -1115,7 +1310,7 @@ C
 \end_inset
 
 , неогрнаичену снизу 
-\begin_inset Formula $\text{inf E}$
+\begin_inset Formula $infE=-\infty$
 \end_inset
 
 
@@ -1140,7 +1335,7 @@ C
 \end_inset
 
 : 
-\begin_inset Formula $\forall x\in R$
+\begin_inset Formula $\forall a\in R$
 \end_inset
 
  
@@ -1152,6 +1347,17 @@ C
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+//доработать
 \end_layout
 
 \begin_layout Definition*
