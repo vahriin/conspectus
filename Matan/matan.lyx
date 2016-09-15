@@ -797,7 +797,7 @@ C
 \end_layout
 
 \begin_layout Enumerate
-Пусть 
+(Аксиома индукции)Пусть 
 \begin_inset Formula $P$
 \end_inset
 
@@ -886,6 +886,17 @@ C
 -множество вещественных чисел
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Определение действительных чисел.
+\end_layout
+
 \begin_layout Enumerate
 Действительные(вещественные) число 
 \begin_inset Formula $a$
@@ -948,11 +959,385 @@ C
 \begin_inset Formula $\alpha_{0},....,\alpha_{n}$
 \end_inset
 
--абсолютная величина(модулем ) числа 
-\begin_inset Formula $ $
+-абсолютная величина(модулем ) числa
+\begin_inset Newline newline
 \end_inset
 
 
+\begin_inset Formula $|\alpha|=$
+\end_inset
+
+
+\begin_inset Formula $\begin{cases}
+\alpha & \alpha>0\\
+0 & \alpha=0\\
+-\alpha & \alpha<0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Бесконечные десятичная дробь называется допустимой, если она не содержит
+ переода, состоит только из цифр 9.
+ Любое действиетельное число может быть записано в виде допустимой бесконечной
+ дроби.
+ 
+\end_layout
+
+\begin_layout Standard
+Свойства действительных чисел:
+\end_layout
+
+\begin_layout Enumerate
+Операции сложения 
+\begin_inset Formula $\forall a,b$
+\end_inset
+
+ существет сумма 
+\begin_inset Formula $a+b$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Для любой пары числе 
+\begin_inset Formula $a,b$
+\end_inset
+
+ 
+\begin_inset Formula $a+b=b+a$
+\end_inset
+
+ (коммутативность)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall a,b,c$
+\end_inset
+
+ 
+\begin_inset Formula $a+(b+c)=(a+b)+c$
+\end_inset
+
+ (ассоциативность)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall a$
+\end_inset
+
+ 
+\begin_inset Formula $a+0=a$
+\end_inset
+
+ (существует нейтральный элемент)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall a$
+\end_inset
+
+ 
+\begin_inset Formula $\exists(-a)$
+\end_inset
+
+: 
+\begin_inset Formula $a+(-a)=0$
+\end_inset
+
+ (существует противоположный элемент)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Операция умножения 
+\begin_inset Formula $\forall a,b$
+\end_inset
+
+ определяет и при том однозначным образом число, называющиеся их призведение
+ 
+\begin_inset Formula $a*b$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a*b=b*a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a*(b*c)=(a*b*c)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a*1=a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\neq0$
+\end_inset
+
+ 
+\begin_inset Formula $\exists\frac{1}{a},a^{-1}:a^{-1}*a=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Связь операций сложения и умножения 
+\begin_inset Formula $\forall a,b,c$
+\end_inset
+
+ 
+\begin_inset Formula $(a+b)*c=ac+bc$
+\end_inset
+
+ (дистрибутивность)
+\end_layout
+
+\begin_layout Enumerate
+Упорядоченность 
+\begin_inset Formula $a>0,a=0,a>0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a+b>0$
+\end_inset
+
+, если 
+\begin_inset Formula $a>0$
+\end_inset
+
+ ^ 
+\begin_inset Formula $b>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a*b>0$
+\end_inset
+
+, если 
+\begin_inset Formula $a>0$
+\end_inset
+
+ ^ 
+\begin_inset Formula $b>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Сравнение действиетельных чисел.
+\end_layout
+
+\begin_layout Enumerate
+Сравнение неотрицательных чисел 
+\begin_inset Formula $\alpha=\alpha_{1},...,\alpha_{n}$
+\end_inset
+
+ 
+\begin_inset Formula $\beta=\beta_{1},...,\beta_{n}$
+\end_inset
+
+ 
+\begin_inset Formula $\beta_{n}=\alpha_{n}\,\forall n=0,1...$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Если неотрицательное действиетльное число записать в виде допустимой бесконечной
+ дроби, то говорят, что 
+\begin_inset Formula $\alpha<\beta$
+\end_inset
+
+, если 
+\begin_inset Formula $\alpha_{0}\leq\beta_{0}$
+\end_inset
+
+ и существует такое номер 
+\begin_inset Formula $n$
+\end_inset
+
+, что 
+\begin_inset Formula $\alpha_{n}=\beta_{n}\,\forall n=0,1,...,n-1$
+\end_inset
+
+, а 
+\begin_inset Formula $\alpha_{n}<\beta_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Сравнение произвольных действительных чисел.
+ Если 
+\begin_inset Formula $a$
+\end_inset
+
+-неотрицательное,
+\begin_inset Formula $b$
+\end_inset
+
+-отрицательное 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $a>b$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $a\leq0$
+\end_inset
+
+ ^ 
+\begin_inset Formula $b\leq0$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $\left|a\right|=\left|b\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Неравенство содержащие знак модуля.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left|a+b\right|\leq\left|a\right|+\left|b\right|$
+\end_inset
+
+, 
+\begin_inset Formula $\left|a+b\right|\geq\left|a\right|-\left|b\right|$
+\end_inset
+
+ (неравенство треугольника)
+\end_layout
+
+\begin_layout Standard
+Действительные числа обладают свойством неприрывности.
+\end_layout
+
+\begin_layout Definition*
+Нетривиальное множество элементов, обладающих выше пречислеными свойствами,
+ называют множеством дейстительных чисел.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Расширенная числовая прямая-дополним множество элементов следующими симвалами:
+ 
+\begin_inset Formula $+\infty$
+\end_inset
+
+, 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ .
+ Обозначим 
+\begin_inset Formula $\overline{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $\forall a,b\in R,a\leq b$
+\end_inset
+
+ можно соотнести множество:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left[a,b\right]\underline{\bigtriangleup}$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ x\in R|a\leq x\leq b\right\} $
+\end_inset
+
+-отрезок или сегмент
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(a,b)\bigtriangleup$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ x\in R|a\text{<}x<b\right\} $
+\end_inset
+
+-интервал
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $[a,b)\underline{\bigtriangleup}$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ x\in R|a\leq x<b\right\} $
+\end_inset
+
+-полуинтервал
 \end_layout
 
 \begin_layout Subsection
@@ -2638,7 +3023,11 @@ A=\bigcup_{n=1}^{x}
 
 \begin_layout Proof
 Достаточно доказать, что несчётные множество всех всщественных чисел несчётно.
- Будем считать, что множество всех бесконечных доробей можно пересчитать.
+ Будем считать, что множество всех 
+\end_layout
+
+\begin_layout Proof
+бесконечных доробей можно пересчитать.
  
 \end_layout
 
@@ -2647,8 +3036,132 @@ A=\bigcup_{n=1}^{x}
 \begin_inset Formula $x_{1},x_{2},...$
 \end_inset
 
+ (1) 
+\begin_inset Formula $x_{1}=a_{0}^{1},a_{1}^{1},a_{2}^{1}...$
+\end_inset
+
  
-\begin_inset Formula $x_{1}=a_{0}$
+\begin_inset Formula $x_{2}=a_{0}^{2},a_{1}^{2},a_{2}^{2}...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Докажем, что существет 
+\begin_inset Formula $x=b_{0},b_{1},b_{2}...$
+\end_inset
+
+ (2), которое не содержится в последовательности (1), где 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+-произвольное целове положительное число, остальные цифры 
+\begin_inset Formula $b_{n}\left(1\leq b_{n}\leq8\right)$
+\end_inset
+
+, 
+\begin_inset Formula $b_{n}\neq a_{n}$
+\end_inset
+
+
+\begin_inset Formula $\forall n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+По построению дробь 2 не содержится в плосткости 1.
+ Это протеворич тому, что плоскость 1 содержится все бесконечные положительные
+ дроби.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Мощность множества -это то общее, что есть у всех эквивалентных между собой
+ подмножества.
+ 
+\end_layout
+
+\begin_layout Definition*
+Мощность множества-класс эвивалентных ему множеств.
+ 
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $CardX$
+\end_inset
+
+-мощность 
+\begin_inset Formula $Card$
+\end_inset
+
+ -кардинальное число 
+\end_layout
+
+\begin_layout Definition*
+Алеф нуль -кардинальное число, являющееся мощностью счётного мнжества (не
+ описуемая буква)
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $CardX>CardY$
+\end_inset
+
+ -множество 
+\begin_inset Formula $X$
+\end_inset
+
+ больше 
+\begin_inset Formula $Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+(Теоема Кантора-Берштейна) 
+\end_layout
+
+\begin_layout Theorem*
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ -произвольные множества.
+ Если 
+\begin_inset Formula $\exists A_{1}\subset A:A_{1}\sim B$
+\end_inset
+
+, а 
+\begin_inset Formula $\exists B_{1}\subset B:B_{1}\sim A$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $A\sim B$
 \end_inset
 
 

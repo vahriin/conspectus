@@ -745,12 +745,6 @@ C
 биективное 
 \end_layout
 
-\begin_layout Section
-Счётные множества.
- Несчётность множества вещественных чисел.
- Понятие мощности множества.
-\end_layout
-
 \begin_layout Subsection
 Аксиомы Пеано
 \end_layout
@@ -1924,14 +1918,23 @@ c наименьшее из всех граней
 \end_inset
 
  
-\begin_inset Formula $a>1$
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $\exists r$
 \end_inset
 
  
 \begin_inset Formula $\alpha^{r}=\gamma$
 \end_inset
 
-, r-искомый логарифм
+, то 
+\begin_inset Formula $r$
+\end_inset
+
+-искомый логарифм
 \end_layout
 
 \begin_layout Proof
@@ -1939,31 +1942,51 @@ c наименьшее из всех граней
 \begin_inset Formula $r$
 \end_inset
 
- тогда проведем сечение по следущему правилу 
+ .Тогда проведем сечение по следущему правилу 
 \begin_inset Formula $B$
 \end_inset
 
-
+/
 \begin_inset Formula $\acute{B}$
 \end_inset
 
- 
+.
+ В классе 
+\begin_inset Formula $B$
+\end_inset
+
+ заменим все 
 \begin_inset Formula $b$
 \end_inset
 
- 
+: 
 \begin_inset Formula $\alpha^{b}<\gamma$
 \end_inset
 
- 
-\begin_inset Formula $\acute{b}$
+,a в классе 
+\begin_inset Formula $\acute{B}$
+\end_inset
+
+ все 
+\begin_inset Formula $\acute{b}\text{:}$
 \end_inset
 
  
 \begin_inset Formula $\alpha^{\acute{b}}>\gamma$
 \end_inset
 
- используя неравенство бернули 
+.
+ Эти члены 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $\acute{B}$
+\end_inset
+
+ не пустые.
+ В силу неравенства Бернули.
+ 
 \end_layout
 
 \begin_layout Proof
@@ -1979,6 +2002,14 @@ c наименьшее из всех граней
 \end_inset
 
  
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $n\in\acute{B}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proof
@@ -1994,19 +2025,25 @@ c наименьшее из всех граней
 \end_inset
 
  
-\begin_inset Formula $\beta$
+\begin_inset Formula $-n\in B$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Proof
+Таким образом построенное сечение определяет число вещественное которое
+ является пограничным между этими плоскостями.
+ 
+\end_layout
+
+\begin_layout Proof
 По определению степени 
-\begin_inset Formula $\alpha^{b}<\alpha^{\beta}<\alpha^{b}$
+\begin_inset Formula $\alpha^{b}<\alpha^{\beta}<\alpha^{\acute{b}}$
 \end_inset
 
  причем 
-\begin_inset Formula $\beta$
+\begin_inset Formula $\alpha^{\beta}$
 \end_inset
 
 -единственное удовлетворяющее всех подобным неравенствам.
@@ -2027,6 +2064,10 @@ c наименьшее из всех граней
 \end_inset
 
  
+\begin_inset Formula $\beta=log_{\alpha}\gamma$
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2036,7 +2077,7 @@ c наименьшее из всех граней
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
 Свойства полоноты множества действительных чисел 
 \end_layout
 
@@ -2049,26 +2090,35 @@ c наименьшее из всех граней
 \end_layout
 
 \begin_layout Conjecture*
-\begin_inset Formula $\left[a_{1}b,_{1}\right],$
+\begin_inset Formula $\left[a_{1},b_{1}\right],$
 \end_inset
 
 
-\begin_inset Formula $\left[a_{1}b,_{1}\right],$
+\begin_inset Formula $\left[a_{2},b{}_{1}\right],$
 \end_inset
 
-
-\begin_inset Formula $\left[a_{1}b,_{1}\right],$
-\end_inset
-
-
-\begin_inset Formula $\left[a_{1}b,_{1}\right],...a_{n}\in R,b\in R_{n},n=1,2...$
+..., 
+\begin_inset Formula $\left[a_{n}b,_{n}\right],...a_{n}\in R,b\in R_{n},n=1,2...$
 \end_inset
 
  называется системой вложенных отрезков, если 
 \end_layout
 
 \begin_layout Conjecture*
-\begin_inset Formula $a_{1}\leq a_{2}...\leq a_{n}$
+\begin_inset Formula $a_{1}\leq a_{2}...\leq a_{n}\leq b_{n}\leq...\leq b_{2}\leq b_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Conjecture*
+т.е.
+ если каждый следующий отрезок 
+\begin_inset Formula $\left[a_{n+1},b_{n+1}\right]\subset\left[a_{n},b_{n}\right]$
+\end_inset
+
+: 
+\begin_inset Formula $\left[a_{n},b_{n}\right]\subset\left[a_{n-1},b_{n-1}\right]\subset...\subset\left[a_{1},b_{1}\right]$
 \end_inset
 
  
@@ -2103,7 +2153,7 @@ c наименьшее из всех граней
 
 .
  
-\begin_inset Formula $\forall m,n$
+\begin_inset Formula $\forall m,n:$
 \end_inset
 
  
@@ -2137,7 +2187,15 @@ c наименьшее из всех граней
 \end_layout
 
 \begin_layout Definition*
-Пусть задана система отрезков.
+Пусть задана система отрезков 
+\begin_inset Formula $\left[a_{n},b_{n}\right],$
+\end_inset
+
+
+\begin_inset Formula $a_{n},b_{n}\in R$
+\end_inset
+
+.
  Будем говорить, что длина 
 \begin_inset Formula $b_{n}-a_{m}$
 \end_inset
@@ -2146,26 +2204,36 @@ c наименьшее из всех граней
 \begin_inset Formula $\forall\varepsilon>0$
 \end_inset
 
- существует такое номер , что для всех номеров выполняется неравенство.
+ существует такое номер 
+\begin_inset Formula $n_{\varepsilon}$
+\end_inset
+
+, что для всех номеров выполняется неравенство 
+\begin_inset Formula $b_{n}-a_{m}<\varepsilon$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n,m$
+\end_inset
+
+.
  
 \end_layout
 
 \begin_layout Theorem*
-(Теорема Кантора).
+(Теорема Кантора 2).
  Для всякой системы, вложенных отрезков с длинами, стремящимися к нулю,
- существует единственная точка, принадлжащая всем отрезкам данной системы,
- причем.
- Для всякой системы, вложенных открезков с длинами, стремящимися к нулю,
- 
+ существует единственная точка, принадлежащая всем отрезкам данной системы,
+ причем для всякой системы, вложенных открезков с длинами, стремящимися
+ к нулю, 
 \begin_inset Formula $\exists!$
 \end_inset
 
- точка, придлежащая всем отрезкам даннной системы.
- Причем 
+ точка, придлежащая всем отрезкам даннной системы, причем 
 \end_layout
 
 \begin_layout Theorem*
-\begin_inset Formula $\xi=sup_{n\in N}\left\{ a_{n}\right\} =inf_{n\in N]}\left\{ b_{n}\right\} $
+\begin_inset Formula $\xi=sup_{n\in N}\left\{ a_{n}\right\} =inf_{n\in N}\left\{ b_{n}\right\} $
 \end_inset
 
 
@@ -2183,8 +2251,8 @@ c наименьшее из всех граней
 \begin_inset Formula $\xi$
 \end_inset
 
- 
-\begin_inset Formula $\acute{\xi}$
+,
+\begin_inset Formula $\acute{\xi}\in\left[a_{n},b_{n}\right]$
 \end_inset
 
 .
@@ -2257,7 +2325,7 @@ c наименьшее из всех граней
 \end_layout
 
 \begin_layout Enumerate
-(симметричность) из того, что 
+(симметричность) 
 \begin_inset Formula $X\sim Y$
 \end_inset
 
@@ -2270,6 +2338,320 @@ c наименьшее из всех граней
 \end_inset
 
  
+\end_layout
+
+\begin_layout Enumerate
+(транзитивность) 
+\begin_inset Formula $X\sim Y$
+\end_inset
+
+ и 
+\begin_inset Formula $Y\sim Z$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $X\sim Z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Множество 
+\begin_inset Formula $X$
+\end_inset
+
+ называется конечным если существует такое натуральное 
+\begin_inset Formula $n$
+\end_inset
+
+ , что 
+\begin_inset Formula $X\sim\left[1,n\right]$
+\end_inset
+
+.
+ В противном слчае оно называется бесконечным.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Множество 
+\begin_inset Formula $X$
+\end_inset
+
+ называется счётным, если 
+\begin_inset Formula $X\sim N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+Всякое бескоенечное множество содержит счётные подмножества.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Возьмём множество 
+\begin_inset Formula $A$
+\end_inset
+
+ и выбирем элемент 
+\begin_inset Formula $a_{1}:A_{1}=A\smallsetminus\left\{ a_{1}\right\} $
+\end_inset
+
+.
+ Так же 
+\begin_inset Formula $a_{2}:A_{2}=A\smallsetminus\left\{ a_{1},a_{2}\right\} $
+\end_inset
+
+.
+ Такие элементы не повторяются 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $B=\left\{ a_{n}|n\in N\right\} $
+\end_inset
+
+ является счётным подмножеством множества 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+Всяоке бесконеыное подмножество счётного множества счётно.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $X$
+\end_inset
+
+ -счетное множество, введём бескоенчное подмножество 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $X=\left\{ x_{n}|n\in N\right\} $
+\end_inset
+
+ Возьмём элемент 
+\begin_inset Formula $n_{1}$
+\end_inset
+
+-наименьший из тех 
+\begin_inset Formula $N$
+\end_inset
+
+:
+\begin_inset Formula $x_{n}\in Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Выбираем 
+\begin_inset Formula $n_{2}$
+\end_inset
+
+:
+\begin_inset Formula $n_{2}>n_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{n}\in Y$
+\end_inset
+
+ Пронумеруем 
+\begin_inset Formula $Y$
+\end_inset
+
+ 
+\begin_inset Formula $Y=\left\{ x_{n_{k}}|k\in N\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $Y$
+\end_inset
+
+-счётные множество.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Следствие: Всякое подмоножество не более чем счётного множества не более
+ чем счётно.
+\end_layout
+
+\begin_layout Theorem*
+Объединение счётного числа и счётного множества счётно 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A_{n},n\in N$
+\end_inset
+
+ -счётные множество 
+\begin_inset Formula 
+\[
+A=\bigcup_{n=1}^{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $A_{n}=\left\{ a_{n_{1}},a_{n_{2}},...\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $n\in N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+//рисунок
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+Множество всех рациональных чисел счётно.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим множество: 
+\begin_inset Formula $A_{1}=\left\{ 1,2,3...\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $A_{2}=\left\{ \frac{1}{2},\frac{2}{2},\frac{3}{2},...\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $A_{3}=\left\{ \frac{1}{3},\frac{2}{3},\frac{3}{3},...\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Этой матрицей //дописать
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+Множество всех вещественных числе несчётно
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Достаточно доказать, что несчётные множество всех всщественных чисел несчётно.
+ Будем считать, что множество всех бесконечных доробей можно пересчитать.
+ 
+\end_layout
+
+\begin_layout Proof
+т.е 
+\begin_inset Formula $x_{1},x_{2},...$
+\end_inset
+
+ 
+\begin_inset Formula $x_{1}=a_{0}$
+\end_inset
+
+
 \end_layout
 
 \end_body
