@@ -77,7 +77,13 @@ figs-within-sections
 \begin_body
 
 \begin_layout Title
-Лекции по математическому анализу.
+Конспекты по математическому анализу.
+ Карелин Владимир Витальевич.
+\end_layout
+
+\begin_layout Abstract
+Напечатаны Щербаковом Глебом.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3158,6 +3164,299 @@ A=\bigcup_{n=1}^{x}
 
 
 \begin_inset Formula $A\sim B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Комплексные числа
+\end_layout
+
+\begin_layout Definition*
+Комплексные числа-явлеяется расширенным множеством действительных числе,
+ было введено понятие мнимой единицы 
+\begin_inset Formula $\sqrt{i^{2}}=-1$
+\end_inset
+
+ 
+\begin_inset Formula $z=a+ib$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a=R(z)$
+\end_inset
+
+-действительная часть
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $b=Im(z)$
+\end_inset
+
+ -мнимая часть
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left|z_{0}\right|=\sqrt{a^{2}+b^{2}}$
+\end_inset
+
+-модулем
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\phi$
+\end_inset
+
+-комплексного числа
+\end_layout
+
+\begin_layout Definition*
+Показательная формула комплексного числа 
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $z_{0}=exp(i\phi)=(z_{0})(cos\phi+isin\phi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Операции над комплекснымичислами.
+ 
+\begin_inset Formula $z_{0}=a+ib,z_{1}=c+id$
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=z_{0}+z_{1}=a+c+i(b+d)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=z_{0}-z_{1}=a-b+i(b-d)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=z_{0}*z_{1}=(a+bi)(c+id)=(ac-bd)+i(ad+cb)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Комплексное сопряженные числа 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+z_{0}=a+ib\\
+z_{1}=a-ib
+\end{cases}$
+\end_inset
+
+-комплексно-сопряженные чилса 
+\begin_inset Formula $z_{1}=\bar{z_{0}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left|\bar{z_{0}}\right|=\left|z_{0}\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\phi_{\bar{z_{0}}}=-\phi_{z_{0}}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(a+ib)(a-ib)=a^{2}+b^{2}=\left|z_{0}\right|^{2}$
+\end_inset
+
+цццц
+\end_layout
+
+\begin_layout Subsubsection
+Деление комплексных чисел 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z=\frac{z_{1}}{z_{0}},\left|z_{0}\right|>0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $z=\frac{a+ib}{c+id}=\frac{(a+ib)(c-id)}{(c+id)(c-id)}=\frac{(ac+bd)+i(dc-ad)}{c^{2}+b^{2}}=\frac{ac+bd}{c^{2}+b^{2}}+i\frac{bc-ad}{c^{2}+d^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Числовые последовательности и ряды
+\end_layout
+
+\begin_layout Subsection
+Понятие предела числовой последовательности.
+ Сходящиеся последовательности.
+\end_layout
+
+\begin_layout Definition*
+Числовые последовательностью 
+\begin_inset Formula $\left\{ x_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ называются всякие отображение натуральных чисел 
+\begin_inset Formula $N$
+\end_inset
+
+ во множество вещественных чисел 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f:N\cup\left\{ 0\right\} \rightarrow R$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $g:N\setminus\left\{ 1,2,...,R-1\right\} \rightarrow R$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left\{ f_{n}\right\} _{n=0}^{\infty}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Число называется пределом последовательности 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ если 
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+ 
+\begin_inset Formula $\exists N=N(\varepsilon):$
+\end_inset
+
+
+\begin_inset Formula $\forall n>N$
+\end_inset
+
+ 
+\begin_inset Formula $\left|x_{n}-a\right|<\varepsilon$
+\end_inset
+
+ 
+\begin_inset Formula $\left(a\in R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+В любом 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ окрестности числа a содержится бесконечное число этой последовательности,
+ при этом вне этой окрестности содержится только конечное чило.
+ 
+\begin_inset Formula $a=lim_{n\rightarrow\infty}x_{n}$
+\end_inset
+
+ 
+\begin_inset Formula $x_{n}\rightarrow_{n\rightarrow\infty}a$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $-\varepsilon<x_{n}-a<\varepsilon$
+\end_inset
+
+ 
+\begin_inset Formula $\sim$
+\end_inset
+
+ 
+\begin_inset Formula $\left|x_{n}-a\right|<\varepsilon$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
