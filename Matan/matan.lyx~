@@ -5,6 +5,9 @@
 \save_transient_properties true
 \origin unavailable
 \textclass amsart
+\begin_preamble
+\usepackage{indentfirst}
+\end_preamble
 \use_default_options true
 \begin_modules
 theorems-ams
@@ -77,7 +80,13 @@ figs-within-sections
 \begin_body
 
 \begin_layout Title
-Лекции по математическому анализу.
+Конспекты по математическому анализу.
+ Карелин Владимир Витальевич.
+\end_layout
+
+\begin_layout Abstract
+Напечатаны Щербаковым Глебом.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -94,18 +103,18 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Definition*
-Математический анализ-область науки, где изучается переменная величина своеобраз
-ными методами иследования (анализом посредствам б.м.
- или посредствам предельных переходов.
+Математический анализ — область науки, где изучается переменная величина
+ своеобразными методами иследования (анализом посредством б.м.
+ или посредством предельных переходов).
  
 \end_layout
 
 \begin_layout Standard
-Предшествинеками были: метод исчерпования и метод неделимового.
+Предшествинеками были: метод исчерпывания и метод неделимого.
 \end_layout
 
 \begin_layout Definition*
-Метод исчерпования - античныйметоддля исследования площадей или объёмов
+Метод исчерпывания — античный метод для исследования площадей или объёмов
  тела.
  Для нахождения некоторой фигуры вписывалась монотоная последовательность
  других фигур и доказывалось, что их площадь неограничено приближается к
@@ -123,8 +132,8 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Definition*
-Метод неделимового -совокупность предметов для вычесления площадей геометрически
-х тел.
+Метод неделимового — совокупность предметов для вычисления площадей геометрическ
+их тел.
  Идея метода для плоских фигур: разделить их на фигуры нулевой ширины, потом
  собирать без изменения длины , площадь которых известна.
  
@@ -143,61 +152,64 @@ LatexCommand tableofcontents
 \begin_inset Formula $p\wedge q$
 \end_inset
 
-–конъюкция (логическое произведение)
+ — конъюкция (логическое произведение)
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $p\vee q$
 \end_inset
 
- -дизъюнкция (логическое или) 
+ — дизъюнкция (логическое или) 
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $p\rightarrow q$
 \end_inset
 
--импликация с посылкой p (если..., то...) 
+ — импликация с посылкой p (если..., то...) 
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $p\equiv q$
 \end_inset
 
--эквиваленция (тогда и только тогда)
+ — эквиваленция (тогда и только тогда)
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $\overline{q}$
 \end_inset
 
--отрицание 
+ — отрицание 
 \end_layout
 
 \begin_layout Enumerate
-V - произвольное истиное
+V — произвольное истиное
 \end_layout
 
 \begin_layout Enumerate
-F - произвольное ложное 
+F — произвольное ложное 
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $\exists$
 \end_inset
 
- - квантер существования 
+ — квантор существования 
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $\forall$
 \end_inset
 
--квантор всеобщности
+ — квантор всеобщности
 \end_layout
 
 \begin_layout Standard
-p,q,r - произвольные высказывания
+\begin_inset Formula $p,q,r$
+\end_inset
+
+ — произвольные высказывания.
 \begin_inset VSpace medskip
 \end_inset
 
@@ -205,7 +217,7 @@ p,q,r - произвольные высказывания
 \end_layout
 
 \begin_layout Definition*
-Множество -совокупность неупорядоченных неповторяющихся объектов 
+Множество — совокупность неупорядоченных неповторяющихся объектов .
 \end_layout
 
 \begin_layout Standard
@@ -220,14 +232,39 @@ p,q,r - произвольные высказывания
 \end_layout
 
 \begin_layout Enumerate
-Аксиома объемности -если множества A и B состоят из одних и тех же элементов,
- то они совпадают.
- A=B
+Аксиома объемности: если множества 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ состоят из одних и тех же элементов, то они совпадают: 
+\begin_inset Formula $A=B$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Enumerate
-Аксиома суммы - для произвольных множеств A и B существует множество, элементы
- которого являются элементами множества A и все элементы множества B.
+Аксиома суммы: для произвольных множеств 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ существует множество, элементы которого являются элементами множества 
+\begin_inset Formula $A$
+\end_inset
+
+ и все элементы множества 
+\begin_inset Formula $B$
+\end_inset
+
+.
  
 \begin_inset Formula $A\cup B$
 \end_inset
@@ -236,9 +273,24 @@ p,q,r - произвольные высказывания
 \end_layout
 
 \begin_layout Enumerate
-Аксиома разности -для произвольного множества A и B существует множество,
- элементами кторого являются те и только те элементы множества A, которые
- не являются элементами множеста B.
+Аксиома разности: для произвольного множества 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ существует множество, элементами которого являются те и только те элементы
+ множества 
+\begin_inset Formula $A$
+\end_inset
+
+, которые не являются элементами множеста 
+\begin_inset Formula $B$
+\end_inset
+
+.
  
 \begin_inset Formula $A\setminus B$
 \end_inset
@@ -252,11 +304,19 @@ p,q,r - произвольные высказывания
 
 \begin_deeper
 \begin_layout Enumerate
-Произведение -
+Произведение: 
 \begin_inset Formula $A\cap B$
 \end_inset
 
- множеств A и B -это общая часть сомножетелей: 
+ множеств 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — общая часть сомножетелей: 
 \begin_inset Formula $\forall x\in$
 \end_inset
 
@@ -268,7 +328,15 @@ p,q,r - произвольные высказывания
 \end_layout
 
 \begin_layout Enumerate
-Симметричная разность -разность двух множеств A и B определяется как : 
+Симметричная разность: разность двух множеств 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ определяется как : 
 \begin_inset Formula $A\bigtriangleup B\equiv(A\setminus B)\cup(B\setminus A)$
 \end_inset
 
@@ -281,7 +349,7 @@ p,q,r - произвольные высказывания
 
 \end_deeper
 \begin_layout Definition*
-Включение -множества A называется подмножеством B, если каждый элемент множества
+Включение множества A называется подмножеством B, если каждый элемент множества
  A принадлежит множеству B.
  
 \begin_inset Formula $A\subset B$
@@ -302,16 +370,20 @@ C
 \begin_inset Formula $_{M}A$
 \end_inset
 
--дополненое множества A в M.
- C
-\begin_inset Formula $_{m}$
+ — дополненое множества 
+\begin_inset Formula $A$
 \end_inset
 
-=
-\begin_inset Formula $A\setminus B$
+ в 
+\begin_inset Formula $M$
 \end_inset
 
+.
+ 
+\begin_inset Formula $C_{m}=A\backslash B$
+\end_inset
 
+.
 \end_layout
 
 \begin_layout Standard
@@ -329,16 +401,19 @@ C
 \end_layout
 
 \begin_layout Definition*
-Прямое(декартовое) произведение множеств X и Y называется множество всех
- упорядочных пар(x,y): 
-\begin_inset Formula $x\in X$
+Прямым (декартовым) произведением множеств 
+\begin_inset Formula $X$
 \end_inset
 
-, 
-\begin_inset Formula $x\in Y,$
+ и 
+\begin_inset Formula $Y$
 \end_inset
 
- 
+ называется множество всех упорядочных пар 
+\begin_inset Formula $\{(x,y):\ x\in X,y\in Y\}$
+\end_inset
+
+, при этом 
 \begin_inset Formula $X\times Y\neq Y\times X$
 \end_inset
 
@@ -353,7 +428,7 @@ C
 \end_layout
 
 \begin_layout Definition*
-Отображение -правило 
+Отображение — правило 
 \begin_inset Formula $f$
 \end_inset
 
@@ -365,9 +440,24 @@ C
 \begin_inset Formula $y\in Y$
 \end_inset
 
-.(отображение множества X в множества Y).
- X- область значения.
- Y-область определения.
+.(отображение множества 
+\begin_inset Formula $X$
+\end_inset
+
+ в множество 
+\begin_inset Formula $Y$
+\end_inset
+
+).
+ Здесь 
+\begin_inset Formula $X$
+\end_inset
+
+ называется областью определения, а 
+\begin_inset Formula $Y$
+\end_inset
+
+ — областью значения.
  
 \end_layout
 
@@ -391,8 +481,11 @@ C
 \begin_inset Formula $Y$
 \end_inset
 
- будем называть последовательностью (в Y) .Числовой последовательностью же
- мы будем называть : 
+ будем называть последовательностью (в 
+\begin_inset Formula $Y$
+\end_inset
+
+).Числовой последовательностью же мы будем называть : 
 \begin_inset Formula $\left\{ x_{n}\right\} _{i=1}^{\infty}$
 \end_inset
 
@@ -407,7 +500,7 @@ C
 \end_layout
 
 \begin_layout Definition*
-График функции - 
+График функции — 
 \begin_inset Formula $\varGamma_{f}=\left\{ \left(x,y\right)\in X\times Y\mid y=f(x)\right\} $
 \end_inset
 
@@ -422,7 +515,11 @@ C
 \end_layout
 
 \begin_layout Definition*
-Образ множества A при отображение 
+Образом множества 
+\begin_inset Formula $A$
+\end_inset
+
+ при отображении 
 \begin_inset Formula $f$
 \end_inset
 
@@ -441,7 +538,11 @@ C
 \end_layout
 
 \begin_layout Definition*
-Прообраз множества B при отображение 
+Прообразом множества 
+\begin_inset Formula $B$
+\end_inset
+
+ при отображении 
 \begin_inset Formula $f:X\rightarrow Y$
 \end_inset
 
@@ -464,7 +565,7 @@ C
 \end_layout
 
 \begin_layout Definition*
-Транзитивность - 
+Транзитивность — 
 \begin_inset Formula $f:X\rightarrow Y$
 \end_inset
 
@@ -488,7 +589,7 @@ C
 \begin_inset Formula $g(f(x))$
 \end_inset
 
--суперпозиция отображения.
+ --- суперпозиция отображения.
 \end_layout
 
 \begin_layout Standard
@@ -502,7 +603,7 @@ C
 \begin_inset Formula $f\circ g$
 \end_inset
 
- - суперпозиция 
+ — суперпозиция 
 \begin_inset Formula $f:X\rightarrow Y$
 \end_inset
 
@@ -568,7 +669,19 @@ C
 \begin_inset Formula $f$
 \end_inset
 
- от X в Y называется 
+ от 
+\begin_inset Formula $X$
+\end_inset
+
+ в 
+\begin_inset Formula $Y$
+\end_inset
+
+ называется:
+\end_layout
+
+\begin_layout Definition*
+TODO: переформулировать это.
 \end_layout
 
 \begin_layout Itemize
@@ -588,7 +701,7 @@ C
 \end_layout
 
 \begin_layout Itemize
-инъективным или взаимно однозначным отображение 
+инъективным или взаимно однозначным отображением 
 \begin_inset Quotes eld
 \end_inset
 
@@ -628,7 +741,7 @@ C
 \begin_inset Quotes erd
 \end_inset
 
- (одновременно и сюръективно и инъективно
+ (одновременно и сюръективно и инъективно)
 \end_layout
 
 \begin_layout Standard
@@ -643,15 +756,15 @@ C
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
-можно установить новое отображение:
+ можно установить новое отображение:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $g:Y\rightarrow X\,\left(y\in Y,g(x)=x\in X\right)$
 \end_inset
 
- (
-\begin_inset Formula $g(y)=x)\Leftrightarrow(f(x)=y)$
+ 
+\begin_inset Formula $(g(y)=x)\Leftrightarrow(f(x)=y)$
 \end_inset
 
  
@@ -666,7 +779,7 @@ C
 \end_layout
 
 \begin_layout Enumerate
-Имеет место равенства: 
+Имеют место равенства: 
 \end_layout
 
 \begin_deeper
@@ -714,7 +827,7 @@ C
 
 \begin_layout Example*
 Отображение.
- Иьъективное не сюръективное.//вставить картинку.
+ Инъективное, не сюръективное.//вставить картинку.
 \end_layout
 
 \begin_layout Standard
@@ -742,7 +855,7 @@ C
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
-биективное 
+ биективное 
 \end_layout
 
 \begin_layout Subsection
@@ -753,7 +866,7 @@ C
 \begin_inset Formula $l$
 \end_inset
 
- -натуральное число 
+ — натуральное число 
 \end_layout
 
 \begin_layout Enumerate
@@ -770,7 +883,7 @@ C
 
 \begin_layout Enumerate
 Не существует такого натурального числа 
-\begin_inset Formula $\text{n}$
+\begin_inset Formula $n$
 \end_inset
 
  , для которого 
@@ -789,7 +902,7 @@ C
 \begin_inset Formula $n_{2}$
 \end_inset
 
- -различные натуральные числа, то то 
+ — различные натуральные числа, то то 
 \begin_inset Formula $\rho(n_{1})\neq\rho(n_{2})$
 \end_inset
 
@@ -801,12 +914,12 @@ C
 \begin_inset Formula $P$
 \end_inset
 
- -некоторое свойство, которым может обладать натуральное число; таким образом
- 
+  --- некоторое свойство, которым может обладать натуральное число; таким
+ образом 
 \begin_inset Formula $\text{P\left(n\right)}$
 \end_inset
 
--верно, если натуральное число n обладает свойством 
+ --- верно, если натуральное число n обладает свойством 
 \begin_inset Formula $P$
 \end_inset
 
@@ -848,42 +961,42 @@ C
 \begin_inset Formula $P(1)$
 \end_inset
 
- -база индукции
+ — база индукции
 \end_layout
 
 \begin_layout Definition*
 \begin_inset Formula $P\left(n\right)\rightarrow P\left(S\left(n\right)\right)$
 \end_inset
 
- -шаг индукции
+ — шаг индукции
 \end_layout
 
 \begin_layout Definition*
 \begin_inset Formula $N$
 \end_inset
 
--множество натуральных чисел
+ — множество натуральных чисел
 \end_layout
 
 \begin_layout Definition*
 \begin_inset Formula $Z$
 \end_inset
 
--множество целых чисел
+ — множество целых чисел
 \end_layout
 
 \begin_layout Definition*
 \begin_inset Formula $Q$
 \end_inset
 
--множество рациональных чисел
+ — множество рациональных чисел
 \end_layout
 
 \begin_layout Definition*
 \begin_inset Formula $R$
 \end_inset
 
--множество вещественных чисел
+ — множество вещественных чисел
 \end_layout
 
 \begin_layout Standard
@@ -898,7 +1011,7 @@ C
 \end_layout
 
 \begin_layout Enumerate
-Действительное(вещественные) число 
+Действительное (вещественное) число 
 \begin_inset Formula $a$
 \end_inset
 
@@ -910,7 +1023,7 @@ C
 \begin_inset Formula $a_{0}$
 \end_inset
 
--неотрицательное целое число , а каждое 
+ --- неотрицательное целое число , а каждое 
 \begin_inset Formula $a_{n}\in N_{+}$
 \end_inset
 
@@ -918,12 +1031,12 @@ C
 \end_layout
 
 \begin_layout Enumerate
-Бесконечная десятичноая дробь называется переодической и записывается в
- ввиде 
+Бесконечная десятичная дробь называется периодической и записывается в виде
+ 
 \begin_inset Formula $a=\pm a_{0},...a_{n}\left(\beta_{1},..\beta_{n}\right)$
 \end_inset
 
- , если после некоторое десятичного разряда группе цифр 
+ , если после некоторого десятичного разряда группе цифр 
 \begin_inset Formula $\left(\beta_{1},..\beta_{n}\right)$
 \end_inset
 
@@ -935,7 +1048,8 @@ C
 \begin_inset Formula $p\in Z,\,q\in N$
 \end_inset
 
- 
+.
+ TODO: переформулировать это.
 \end_layout
 
 \begin_layout Enumerate
@@ -955,7 +1069,7 @@ C
 \begin_inset Formula $\alpha_{0},....,\alpha_{n}$
 \end_inset
 
--абсолютная величина(модулем ) числa
+ — абсолютная величина(модуль) числa
 \begin_inset Newline newline
 \end_inset
 
@@ -1000,11 +1114,11 @@ C
 
 \begin_deeper
 \begin_layout Enumerate
-Для любой пары числе 
+Для любой пары чисел 
 \begin_inset Formula $a,b$
 \end_inset
 
- 
+ верно 
 \begin_inset Formula $a+b=b+a$
 \end_inset
 
@@ -1015,7 +1129,7 @@ C
 \begin_inset Formula $\forall a,b,c$
 \end_inset
 
- 
+ верно 
 \begin_inset Formula $a+(b+c)=(a+b)+c$
 \end_inset
 
@@ -1026,7 +1140,7 @@ C
 \begin_inset Formula $\forall a$
 \end_inset
 
- 
+ верно 
 \begin_inset Formula $a+0=a$
 \end_inset
 
@@ -1156,7 +1270,7 @@ C
 
 \end_deeper
 \begin_layout Standard
-Сравнение действиетельных чисел.
+Сравнение действительных чисел.
 \end_layout
 
 \begin_layout Enumerate
@@ -1176,8 +1290,8 @@ C
 \begin_inset Newline newline
 \end_inset
 
-Если неотрицательное действительное число записать в виде допустимой бесконечной
- дроби, то говорят, что 
+Если неотрицательное действительное число можно записать в виде допустимой
+ бесконечной дроби, то говорят, что 
 \begin_inset Formula $\alpha<\beta$
 \end_inset
 
@@ -1206,15 +1320,15 @@ C
 \begin_inset Formula $a$
 \end_inset
 
--неотрицательное,
+— неотрицательное,
 \begin_inset Formula $b$
 \end_inset
 
--отрицательное 
+ — отрицательное 
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
-
+ 
 \begin_inset Formula $a>b$
 \end_inset
 
@@ -1239,7 +1353,7 @@ C
 \end_layout
 
 \begin_layout Enumerate
-Неравенство содержащие знак модуля.
+Неравенства, содержащие знак модуля.
  
 \begin_inset Newline newline
 \end_inset
@@ -1272,7 +1386,7 @@ C
 \end_layout
 
 \begin_layout Definition*
-Расширенная числовая прямая-дополним множество элементов следующими симвалами:
+Расширенная числовая прямая — дополним множество элементов следующими символами:
  
 \begin_inset Formula $+\infty$
 \end_inset
@@ -1311,7 +1425,7 @@ C
 \begin_inset Formula $\left\{ x\in R|a\leq x\leq b\right\} $
 \end_inset
 
--отрезок или сегмент
+ — отрезок или сегмент
 \end_layout
 
 \begin_layout Enumerate
@@ -1322,7 +1436,7 @@ C
 \begin_inset Formula $\left\{ x\in R|a\text{<}x<b\right\} $
 \end_inset
 
--интервал
+ — интервал
 \end_layout
 
 \begin_layout Enumerate
@@ -1333,7 +1447,7 @@ C
 \begin_inset Formula $\left\{ x\in R|a\leq x<b\right\} $
 \end_inset
 
--полуинтервал
+ — полуинтервал
 \end_layout
 
 \begin_layout Subsection
@@ -1404,9 +1518,16 @@ C
  
 \end_layout
 
-\begin_deeper
 \begin_layout Proof
-Необходимость 
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Необходимость.
+ 
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
@@ -1489,9 +1610,8 @@ C
 (4)
 \end_layout
 
-\end_deeper
 \begin_layout Proof
-Достаточноть.
+Достаточность.
  
 \begin_inset Formula $\Leftarrow$
 \end_inset
@@ -1565,15 +1685,15 @@ C
 \end_inset
 
  называется точной верхней гранью 
-\begin_inset Formula $supE$
+\begin_inset Formula $\sup E$
 \end_inset
 
- -supremum этого множества, а наибольшая из его нижних граней называется
+ — supremum этого множества, а наибольшая из его нижних граней называется
  называется точной нижней 
-\begin_inset Formula $infE$
+\begin_inset Formula $\inf E$
 \end_inset
 
- -infimum .
+ — infimum .
 \end_layout
 
 \begin_layout Remark*
@@ -1582,7 +1702,7 @@ C
 \begin_inset Formula $C\in R$
 \end_inset
 
- называется точной нижней граню множества , если 
+ называется точной нижней гранью множества, если 
 \end_layout
 
 \begin_layout Enumerate
@@ -1601,10 +1721,6 @@ C
 \end_inset
 
  
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset Formula $\exists x_{\varepsilon}\in E$
 \end_inset
 
@@ -1612,7 +1728,7 @@ C
 \begin_inset Formula $C-\varepsilon<x$
 \end_inset
 
-(никакое число меньше 
+ (никакое число меньше 
 \begin_inset Formula $\text{С}$
 \end_inset
 
@@ -1620,7 +1736,7 @@ C
 \begin_inset Formula $E$
 \end_inset
 
- никакоей верхней гранью не является)
+ никакой верхней гранью не является)
 \end_layout
 
 \begin_layout Remark*
@@ -1629,7 +1745,7 @@ C
 \begin_inset Formula $C\in R$
 \end_inset
 
- называется точной верхней граню множества , если
+ называется точной верхней гранью множества, если
 \end_layout
 
 \begin_layout Enumerate
@@ -1647,7 +1763,11 @@ C
 \begin_inset Formula $\forall\varepsilon>0$
 \end_inset
 
- Никакое число меньше C верхней гранью множества 
+ Никакое число меньше 
+\begin_inset Formula $C$
+\end_inset
+
+ верхней гранью множества 
 \begin_inset Formula $E$
 \end_inset
 
@@ -1666,7 +1786,7 @@ C
 \begin_inset Formula $C\in R$
 \end_inset
 
- называется точной верхней граню множества , если
+ называется точной верхней гранью множества , если
 \end_layout
 
 \begin_layout Enumerate
@@ -1699,12 +1819,12 @@ C
 \end_layout
 
 \begin_layout Definition*
-Не всякое числовое множество имеет наибольшей или наименьший элемент.
+Не всякое числовое множество имеет наибольший или наименьший элемент.
 \end_layout
 
 \begin_layout Definition*
 Наибольший элемент
-\begin_inset Formula $(maxE)$
+\begin_inset Formula $(\max E)$
 \end_inset
 
  множества 
@@ -1728,7 +1848,7 @@ C
 
 \begin_layout Definition*
 Наименьший элемент
-\begin_inset Formula $(minE)$
+\begin_inset Formula $(\min E)$
 \end_inset
 
  множества 
@@ -1781,7 +1901,7 @@ C
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
- множество всех верхних граней не пусто
+ множество всех верхних граней не пусто 
 \begin_inset Formula $\left(F\right)$
 \end_inset
 
@@ -1827,7 +1947,11 @@ C
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
- c-верхняя грань 
+ 
+\begin_inset Formula $c$
+\end_inset
+
+ --- верхняя грань 
 \begin_inset Formula $E$
 \end_inset
 
@@ -1835,12 +1959,16 @@ C
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
-c наименьшее из всех граней 
+
+\begin_inset Formula $c$
+\end_inset
+
+ наименьшее из всех граней 
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
  
-\begin_inset Formula $c=supE$
+\begin_inset Formula $c=\sup E$
 \end_inset
 
  (точная верхняя грань)
@@ -1848,18 +1976,22 @@ c наименьшее из всех граней
 
 \begin_layout Standard
 Если неограниено сверху 
-\begin_inset Formula $supE=+\infty$
+\begin_inset Formula $\sup E=+\infty$
 \end_inset
 
 , неогрнаичену снизу 
-\begin_inset Formula $infE=-\infty$
+\begin_inset Formula $\inf E=-\infty$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Theorem*
-Принцип Архимеда -каково бы ни было действительное число a, 
+Принцип Архимеда: каково бы ни было действительное число 
+\begin_inset Formula $a$
+\end_inset
+
+, 
 \begin_inset Formula $\exists$
 \end_inset
 
@@ -1887,7 +2019,11 @@ c наименьшее из всех граней
 \end_layout
 
 \begin_layout Proof
-(от противного )Допустим, что принцип Архимеда не выполняется.
+(от противного)
+\end_layout
+
+\begin_layout Proof
+Допустим, что принцип Архимеда не выполняется.
  
 \begin_inset Formula $\exists a\in R,\forall n\in N$
 \end_inset
@@ -1900,11 +2036,15 @@ c наименьшее из всех граней
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
- число a ограничевает сверху множество натуральных чисел.
- Множество натуральных чисел как всякое непустое ограниченное непустое множество
+ число 
+\begin_inset Formula $a$
+\end_inset
+
+ ограничивает сверху множество натуральных чисел.
+ Множество натуральных чисел как всякое непустое ограниченное множество
  имеет конечную верхную грань.
  
-\begin_inset Formula $\beta=supN$
+\begin_inset Formula $\beta=\sup N$
 \end_inset
 
  
@@ -1941,13 +2081,24 @@ c наименьшее из всех граней
 
 \end_layout
 
-\begin_layout Standard
-Следствие.
- Каковы бы ни были числа a и b: 
+\begin_layout Corollary*
+Каковы бы ни были числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+: 
 \begin_inset Formula $0<a<b$
 \end_inset
 
- существет такое натуральное число n , что 
+ существет такое натуральное число 
+\begin_inset Formula $n$
+\end_inset
+
+ , что 
 \begin_inset Formula $na>b$
 \end_inset
 
@@ -1959,11 +2110,11 @@ c наименьшее из всех граней
 \end_inset
 
  найдём 
-\begin_inset Formula $supX$
+\begin_inset Formula $\sup X$
 \end_inset
 
- найдём 
-\begin_inset Formula $infX$
+, найдём 
+\begin_inset Formula $\inf X$
 \end_inset
 
 .
@@ -1987,7 +2138,7 @@ c наименьшее из всех граней
 \begin_inset Formula $\forall c$
 \end_inset
 
- уже не ограничевает 
+ уже не ограничивает 
 \begin_inset Formula $X$
 \end_inset
 
@@ -1995,8 +2146,8 @@ c наименьшее из всех граней
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
-
-\begin_inset Formula $inf\left\{ \frac{1}{n}\right\} =0$
+ 
+\begin_inset Formula $\inf\left\{ \frac{1}{n}\right\} =0$
 \end_inset
 
  
@@ -2033,7 +2184,7 @@ c наименьшее из всех граней
 \begin_inset Formula $\acute{A}$
 \end_inset
 
- назовём такое разбиение сечением если выполняются 2 условия:
+ назовём такое разбиение сечением, если выполняются 2 условия:
 \end_layout
 
 \begin_layout Enumerate
@@ -2054,7 +2205,7 @@ c наименьшее из всех граней
 \end_inset
 
  множества 
-\begin_inset Formula $\text{A}$
+\begin_inset Formula $A$
 \end_inset
 
  меньше каждого числа 
@@ -2076,14 +2227,14 @@ c наименьшее из всех граней
 \begin_inset Formula $A$
 \end_inset
 
- -нижний класс сечения
+  --- нижний класс сечения
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\acute{A}$
 \end_inset
 
--верхний класс сечения
+ --- верхний класс сечения
 \end_layout
 
 \begin_layout Definition*
@@ -2101,7 +2252,7 @@ c наименьшее из всех граней
 \end_layout
 
 \begin_layout Enumerate
-ни в нижнем классе нет наибольшего числа, ни в верхнем классе -наименьшего
+ни в нижнем классе нет наибольшего числа, ни в верхнем классе — наименьшего
  
 \end_layout
 
@@ -2124,7 +2275,7 @@ c наименьшее из всех граней
 \begin_inset Formula $r$
 \end_inset
 
-- определяет сечение.
+ ---  определяет сечение.
  
 \end_layout
 
@@ -2141,7 +2292,7 @@ c наименьшее из всех граней
 \end_layout
 
 \begin_layout Definition*
-Иррациональное число -вещественное число, которе не является рациональным
+Иррациональное число — вещественное число, которе не является рациональным
  
 \begin_inset Formula $Q$
 \end_inset
@@ -2261,7 +2412,7 @@ c наименьшее из всех граней
 \begin_inset Formula $\alpha^{\beta}$
 \end_inset
 
- назывестя некторое число 
+ называется некторое число 
 \begin_inset Formula $\gamma$
 \end_inset
 
@@ -2315,7 +2466,7 @@ c наименьшее из всех граней
 \begin_inset Formula $r$
 \end_inset
 
--искомый логарифм
+ — искомый логарифм
 \end_layout
 
 \begin_layout Proof
@@ -2427,7 +2578,7 @@ c наименьшее из всех граней
 \begin_inset Formula $\alpha^{\beta}$
 \end_inset
 
--единственное удовлетворяющее всех подобным неравенствам.
+ — единственное удовлетворяющее всех подобным неравенствам.
  Для самого числа 
 \begin_inset Formula $b<\beta<\acute{b}$
 \end_inset
@@ -2463,7 +2614,7 @@ c наименьшее из всех граней
 \end_layout
 
 \begin_layout Standard
-Принцип вложенных отрезком.(принцип Коши-Кантора)
+Принцип вложенных отрезком.(принцип Коши --- Кантора)
 \end_layout
 
 \begin_layout Conjecture*
@@ -2520,7 +2671,7 @@ c наименьшее из всех граней
 \begin_inset Formula $A$
 \end_inset
 
--множество всех концов 
+ --- множество всех концов 
 \begin_inset Formula $a_{n}$
 \end_inset
 
@@ -2528,7 +2679,7 @@ c наименьшее из всех граней
 \begin_inset Formula $B$
 \end_inset
 
--множество всех правых концов 
+ --- множество всех правых концов 
 \begin_inset Formula $b_{m}$
 \end_inset
 
@@ -2614,15 +2765,15 @@ c наименьшее из всех граней
 \end_layout
 
 \begin_layout Theorem*
-\begin_inset Formula $\xi=sup_{n\in N}\left\{ a_{n}\right\} =inf_{n\in N}\left\{ b_{n}\right\} $
+\begin_inset Formula $\xi=\sup_{n\in N}\left\{ a_{n}\right\} =\inf_{n\in N}\left\{ b_{n}\right\} $
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Proof
-Пусть длина отрезком стремится к нулю.
- Покажем, что существет только одна точка приндалежащая всем отрезкам.
+Пусть длина отрезков стремится к нулю.
+ Покажем, что существет только одна точка, приндалежащая всем отрезкам.
  
 \end_layout
 
@@ -2682,7 +2833,7 @@ c наименьшее из всех граней
 \end_inset
 
  называются эквивалентными или равномощными, если между ними можно установить
- взаимно-однозначное соответсвие (биекция).
+ взаимно --- однозначное соответсвие (биекция).
 \begin_inset Formula $X\sim Y$
 \end_inset
 
@@ -2690,7 +2841,7 @@ c наименьшее из всех граней
 \end_layout
 
 \begin_layout Definition*
-Свойства
+Свойства:
 \end_layout
 
 \begin_layout Enumerate
@@ -2785,7 +2936,7 @@ c наименьшее из всех граней
 \end_layout
 
 \begin_layout Theorem*
-Всякое бескоенечное множество содержит счётные подмножества.
+Всякое бесконечное множество содержит счётные подмножества.
  
 \end_layout
 
@@ -2849,7 +3000,7 @@ c наименьшее из всех граней
 \begin_inset Formula $X$
 \end_inset
 
- -счетное множество, введём бесконечное подмножество 
+ — счетное множество, введём бесконечное подмножество 
 \begin_inset Formula $Y$
 \end_inset
 
@@ -2864,7 +3015,7 @@ c наименьшее из всех граней
 \begin_inset Formula $n_{1}$
 \end_inset
 
--наименьший из тех 
+ — наименьший из тех 
 \begin_inset Formula $N$
 \end_inset
 
@@ -2904,7 +3055,7 @@ c наименьшее из всех граней
 \begin_inset Formula $Y$
 \end_inset
 
--счётные множество.
+ --- счётные множество.
  
 \end_layout
 
@@ -2935,7 +3086,7 @@ c наименьшее из всех граней
 \begin_inset Formula $A_{n},n\in N$
 \end_inset
 
- -счётные множество 
+  --- счётные множество 
 \begin_inset Formula 
 \[
 A=\bigcup_{n=1}^{x}
@@ -3052,7 +3203,7 @@ A=\bigcup_{n=1}^{x}
 \begin_inset Formula $b_{0}$
 \end_inset
 
--произвольное целове положительное число, остальные цифры 
+ --- произвольное целове положительное число, остальные цифры 
 \begin_inset Formula $b_{n}\left(1\leq b_{n}\leq8\right)$
 \end_inset
 
@@ -3082,13 +3233,13 @@ A=\bigcup_{n=1}^{x}
 \end_layout
 
 \begin_layout Definition*
-Мощность множества -это то общее, что есть у всех эквивалентных между собой
- подмножеств.
+Мощность множества  --- это то общее, что есть у всех эквивалентных между
+ собой подмножеств.
  
 \end_layout
 
 \begin_layout Definition*
-Мощность множества-класс эвивалентных ему множеств.
+Мощность множества --- класс эвивалентных ему множеств.
  
 \end_layout
 
@@ -3096,23 +3247,27 @@ A=\bigcup_{n=1}^{x}
 \begin_inset Formula $CardX$
 \end_inset
 
--мощность 
+ --- мощность 
 \begin_inset Formula $Card$
 \end_inset
 
- -кардинальное число 
+  --- кардинальное число 
 \end_layout
 
 \begin_layout Definition*
-Алеф нуль -кардинальное число, являющееся мощностью счётного множества (не
- описуемая буква)
+Алеф нуль (
+\begin_inset Formula $\aleph_{0}$
+\end_inset
+
+) --- кардинальное число, являющееся мощностью счётного множества (не описуемая
+ буква)
 \end_layout
 
 \begin_layout Definition*
 \begin_inset Formula $CardX>CardY$
 \end_inset
 
- -множество 
+  --- множество 
 \begin_inset Formula $X$
 \end_inset
 
@@ -3143,7 +3298,7 @@ A=\bigcup_{n=1}^{x}
 \begin_inset Formula $B$
 \end_inset
 
- -произвольные множества.
+  --- произвольные множества.
  Если 
 \begin_inset Formula $\exists A_{1}\subset A:A_{1}\sim B$
 \end_inset
@@ -3158,6 +3313,299 @@ A=\bigcup_{n=1}^{x}
 
 
 \begin_inset Formula $A\sim B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Комплексные числа
+\end_layout
+
+\begin_layout Definition*
+Комплексные числа --- является расширенным множеством действительных чисел,
+ было введено понятие мнимой единицы 
+\begin_inset Formula $\sqrt{i^{2}}=-1$
+\end_inset
+
+ 
+\begin_inset Formula $z=a+ib$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a=R(z)$
+\end_inset
+
+ --- действительная часть
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $b=Im(z)$
+\end_inset
+
+  --- мнимая часть
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left|z_{0}\right|=\sqrt{a^{2}+b^{2}}$
+\end_inset
+
+ --- модулем
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\phi$
+\end_inset
+
+ --- комплексного числа
+\end_layout
+
+\begin_layout Definition*
+Показательная формула комплексного числа 
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $z_{0}=exp(i\phi)=(z_{0})(cos\phi+isin\phi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Операции над комплексными числами.
+ 
+\begin_inset Formula $z_{0}=a+ib,z_{1}=c+id$
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=z_{0}+z_{1}=a+c+i(b+d)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=z_{0}-z_{1}=a-b+i(b-d)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=z_{0}*z_{1}=(a+bi)(c+id)=(ac-bd)+i(ad+cb)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Комплексное сопряженные числа 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+z_{0}=a+ib\\
+z_{1}=a-ib
+\end{cases}$
+\end_inset
+
+ --- комплексно --- сопряженные чилса 
+\begin_inset Formula $z_{1}=\bar{z_{0}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left|\bar{z_{0}}\right|=\left|z_{0}\right|$
+\end_inset
+
+ 
+\begin_inset Formula $\phi_{\bar{z_{0}}}=-\phi_{z_{0}}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(a+ib)(a-ib)=a^{2}+b^{2}=\left|z_{0}\right|^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Деление комплексных чисел 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z=\frac{z_{1}}{z_{0}},\left|z_{0}\right|>0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $z=\frac{a+ib}{c+id}=\frac{(a+ib)(c-id)}{(c+id)(c-id)}=\frac{(ac+bd)+i(dc-ad)}{c^{2}+b^{2}}=\frac{ac+bd}{c^{2}+b^{2}}+i\frac{bc-ad}{c^{2}+d^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Числовые последовательности и ряды
+\end_layout
+
+\begin_layout Subsection
+Понятие предела числовой последовательности.
+ Сходящиеся последовательности.
+\end_layout
+
+\begin_layout Definition*
+Числовые последовательностью 
+\begin_inset Formula $\left\{ x_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ называются всякие отображение натуральных чисел 
+\begin_inset Formula $N$
+\end_inset
+
+ во множество вещественных чисел 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f:N\cup\left\{ 0\right\} \rightarrow R$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $g:N\setminus\left\{ 1,2,...,R-1\right\} \rightarrow R$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left\{ f_{n}\right\} _{n=0}^{\infty}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Число называется пределом последовательности 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ если 
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+ 
+\begin_inset Formula $\exists N=N(\varepsilon):$
+\end_inset
+
+
+\begin_inset Formula $\forall n>N$
+\end_inset
+
+ 
+\begin_inset Formula $\left|x_{n}-a\right|<\varepsilon$
+\end_inset
+
+ 
+\begin_inset Formula $\left(a\in R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+В любом 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ окрестности числа a содержится бесконечное число этой последовательности,
+ при этом вне этой окрестности содержится только конечное чило.
+ 
+\begin_inset Formula $a=lim_{n\rightarrow\infty}x_{n}$
+\end_inset
+
+ 
+\begin_inset Formula $x_{n}\rightarrow_{n\rightarrow\infty}a$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $-\varepsilon<x_{n}-a<\varepsilon$
+\end_inset
+
+ 
+\begin_inset Formula $\sim$
+\end_inset
+
+ 
+\begin_inset Formula $\left|x_{n}-a\right|<\varepsilon$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
